@@ -13,13 +13,14 @@ public class Solution {
     static PrintWriter out;
     static StringTokenizer tok;
     static int test;
+    static long[][] solutions = new long[10][10];
 
     public static void main(String[] args) {
         try {
             in = new BufferedReader(new InputStreamReader(System.in));
             out = new PrintWriter(new OutputStreamWriter(System.out));
             test = 1;
-
+            calcSolutions();
             while(hasNext()) {
                 out.println("Case " + test + ": " + solve());
 
@@ -34,9 +35,27 @@ public class Solution {
         }
     }
 
-    private static String solve() throws Exception {
+    private static void calcSolutions() {
+        for(int people = 1; people < solutions.length; people++) {
+            for(int group = 1; group <= people; group++) {
+                solutions[people][group] = calcSolution(people, group);
+            }
+        }
+    }
 
-        return null;
+    private static long calcSolution(int people, int group) {
+        long result = 1;
+        while(!isGoal(result, people, group)) ++result;
+        return result;
+    }
+
+    private static boolean isGoal(long result, int people, int group) {
+
+        return false;
+    }
+
+    private static String solve() throws Exception {
+        return "" + solutions[nextInt()][nextInt()];
     }
 
     private static int nextInt() throws IOException {
