@@ -1,3 +1,5 @@
+package game_with_coins;
+
 import java.io.*;
 import java.util.StringTokenizer;
 

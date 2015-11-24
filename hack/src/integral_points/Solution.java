@@ -1,3 +1,5 @@
+package integral_points;
+
 import java.io.*;
 import java.util.StringTokenizer;
 

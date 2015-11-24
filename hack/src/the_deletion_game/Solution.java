@@ -1,3 +1,5 @@
+package the_deletion_game;
+
 import java.io.*;
 import java.util.StringTokenizer;
 

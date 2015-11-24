@@ -1,3 +1,5 @@
+package movement_in_tree_2;
+
 import java.io.*;
 import java.util.StringTokenizer;
 
