@@ -18,6 +18,7 @@ public class SolutionTemplate {
         try {
             in = new BufferedReader(new InputStreamReader(System.in));
             out = new PrintWriter(new OutputStreamWriter(System.out));
+
             test = 1;
 
             while(hasNext()) {
